@@ -122,8 +122,11 @@ export class Camera
         this.zoom.y = APP.worldContainer.scale.y = y;
 
       //  console.log(this.zoom);
-        createOverlay(this.zoom)
-
+        var zoomedin_cap = 128;
+        var zoomedout_cap = 0.0625;
+        this.zoom.x = Math.min(Math.max(num, this.zoom.x), zoomedin_cap);
+        this.zoom.y = Math.min(Math.max(num, this.zoom.y), zoomedin_cap);
+        
         for(var i = 0; i < OBJECTS.length; i++)
         {
             var object = OBJECTS[i];
