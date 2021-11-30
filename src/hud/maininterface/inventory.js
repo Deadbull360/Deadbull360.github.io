@@ -122,6 +122,8 @@ export class InterfaceItemSlot extends HudObject
 
             switch(this.itemId)
             {
+                console.log("TEST"); // test, this will spam it alot
+                    
                 // theres 10 icons for coins, depending on quantity
                 case 995:
                     if(this.quantity >= 10000) itemIconId = 1004;
