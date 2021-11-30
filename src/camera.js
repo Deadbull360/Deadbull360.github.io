@@ -121,7 +121,7 @@ export class Camera
         this.zoom.x = APP.worldContainer.scale.x = x;
         this.zoom.y = APP.worldContainer.scale.y = y;
 
-        //console.log(this.zoom);
+        console.log(this.zoom);
 
         for(var i = 0; i < OBJECTS.length; i++)
         {
