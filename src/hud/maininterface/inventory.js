@@ -2371,10 +2371,10 @@ export class InterfaceItemSlot extends HudObject
                 case 26158: // default is 2
                     console.log("WTF IS GOING ON"); // test, this will spam it alot
                     console.log(this.quantity); // test, this will spam it alot
-                    if(this.quantity >= 5) itemIconId = 26164;
-                    else if(this.quantity >= 4) itemIconId = 26162;
-                    else if(this.quantity >= 3) itemIconId = 26160;
-                    else if(this.quantity >= 2) itemIconId = 26158;
+                    if(this.quantity >= 5) itemIconId = 26165;
+                    else if(this.quantity >= 4) itemIconId = 26163;
+                    else if(this.quantity >= 3) itemIconId = 26161;
+                    else if(this.quantity >= 2) itemIconId = 26159;
                     break; 
                     
                     //Group hardcore iron platebody, idk if this is needed
