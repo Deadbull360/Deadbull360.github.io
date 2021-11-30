@@ -111,7 +111,7 @@ $.ajax({
                     var item = itemcomp.items[i];
                     AddItemComposition(item.id, item.name, item.stackable, item.tradable);
                 }
-
+                console.log("Items Ready"); // test
                 $.ajax({
                     type: 'GET',
                     url: mapdefJsonURL,
