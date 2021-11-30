@@ -53,6 +53,11 @@ export class Input
         var worldPos = CAMERA.getCursorWorldPosition();
         const newScale = deltaY < 0 ? CAMERA.zoom.x * scaleBy : CAMERA.zoom.x / scaleBy;
         
+        var zoomedin_cap = 128;
+        var zoomedout_cap = 0.0625;
+        newScale = Math.min(Math.max(newScale, zoomedout_cap), zoomedin_cap);
+        newScale = Math.min(Math.max(newScale, zoomedout_cap), zoomedin_cap);
+        
         CAMERA.setZoom(newScale, newScale);
         CAMERA.setPosition(-(worldPos.x - this.getCursorPosition().x / newScale) * newScale, (-worldPos.y - this.getCursorPosition().y / newScale) * newScale);
     }
