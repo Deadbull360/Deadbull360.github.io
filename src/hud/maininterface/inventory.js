@@ -125,7 +125,6 @@ export class InterfaceItemSlot extends HudObject
                 
                 // theres 10 icons for coins, depending on quantity
                 case 995:
-                    console.log("TEST"); // test, this will spam it alot
                     
                     if(this.quantity >= 10000) itemIconId = 1004;
                     else if(this.quantity >= 1000) itemIconId = 1003;
@@ -2372,8 +2371,7 @@ export class InterfaceItemSlot extends HudObject
                     
                     //Group iron platebody, idk if this is needed
                 case 26158: // default is 2
-                    console.log(this.quantity); // test, this will spam it alot
-                    itemIconId = 26165;
+                    itemIconId = 26164;
                  //   if(this.quantity >= 5) itemIconId = 26165;
                 //    else if(this.quantity >= 4) itemIconId = 26163;
                //     else if(this.quantity >= 3) itemIconId = 26161;
@@ -2382,8 +2380,7 @@ export class InterfaceItemSlot extends HudObject
                     
                     //Group hardcore iron platebody, idk if this is needed
                 case 26172: // default is 2
-                    console.log(this.quantity); // test, this will spam it alot
-                    itemIconId = 26179;
+                    itemIconId = 26178;
               //      if(this.quantity >= 5) itemIconId = 26179;
                //     else if(this.quantity >= 4) itemIconId = 26177;
                 //    else if(this.quantity >= 3) itemIconId = 26176;
