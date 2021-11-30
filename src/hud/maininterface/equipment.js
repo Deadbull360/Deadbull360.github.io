@@ -122,8 +122,13 @@ export class InterfaceEquipmentSlot extends HudObject
         {
             var comp = GetItemComposition(this.itemSlot.itemId);
 
-            this.name = comp.name;
-
+            if (comp && (comp.name != null)){
+                this.name = comp.name;
+            }
+            else {
+                this.name = "Invalid name";
+            }
+            
             var itemIconId = this.itemSlot.itemId;
 
             this.itemIcon.graphic.texture = PIXI.Texture.from(`img/items/${itemIconId}.png`);
