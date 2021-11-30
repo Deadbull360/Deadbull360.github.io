@@ -120,8 +120,8 @@ export class Camera
     {
         var zoomedin_cap = 128;
         var zoomedout_cap = 0.0625;
-        this.zoom.x = Math.min(Math.max(this.zoom.x, zoomedout_cap), zoomedin_cap);
-        this.zoom.y = Math.min(Math.max(this.zoom.y, zoomedout_cap), zoomedin_cap);
+        x = Math.min(Math.max(x, zoomedout_cap), zoomedin_cap);
+        y = Math.min(Math.max(y, zoomedout_cap), zoomedin_cap);
         
         this.zoom.x = APP.worldContainer.scale.x = x;
         this.zoom.y = APP.worldContainer.scale.y = y;
