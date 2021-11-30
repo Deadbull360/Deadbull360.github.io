@@ -88,9 +88,13 @@ export class InterfaceItemSlot extends HudObject
             visible = false;
 
         this.icon.setVisibility(visible);
-
+        
+        var stackable = false
         var comp = GetItemComposition(this.itemId);
-        this.text.setVisibility(this.itemId != INVALID_ITEM && this.quantity > 0 && comp.stackable && visible)
+        if (comp && comp.stackable){
+            stackable = true
+        }
+        this.text.setVisibility(this.itemId != INVALID_ITEM && this.quantity > 0 && stackable && visible)
     }
 
     loadSprite()
