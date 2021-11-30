@@ -58,7 +58,7 @@ export class Input
       //  newScale = Math.min(Math.max(newScale, zoomedout_cap), zoomedin_cap);
      //   newScale = Math.min(Math.max(newScale, zoomedout_cap), zoomedin_cap);
         
-        if ((newScale > zoomedout_cap) && ((newScale < zoomedin_cap))){
+        if ((newScale >= zoomedout_cap) && ((newScale <= zoomedin_cap))){
             CAMERA.setZoom(newScale, newScale);
             CAMERA.setPosition(-(worldPos.x - this.getCursorPosition().x / newScale) * newScale, (-worldPos.y - this.getCursorPosition().y / newScale) * newScale);
         }
