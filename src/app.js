@@ -104,11 +104,11 @@ $.ajax({
             dataType: 'json',
             success: (itemcomp) => 
             {
+                console.log(itemcomp.items.length); // test
                 // got item def
                 for(var i = 0; i < itemcomp.items.length; i++)
                 {
                     var item = itemcomp.items[i];
-                    console.log(itemcomp.items.length); // test, this will spam it alot
                     AddItemComposition(item.id, item.name, item.stackable, item.tradable);
                 }
 
