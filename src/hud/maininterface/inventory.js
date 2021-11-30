@@ -122,10 +122,11 @@ export class InterfaceItemSlot extends HudObject
 
             switch(this.itemId)
             {
-                console.log("TEST"); // test, this will spam it alot
-                    
+                
                 // theres 10 icons for coins, depending on quantity
                 case 995:
+                    console.log("TEST"); // test, this will spam it alot
+                    
                     if(this.quantity >= 10000) itemIconId = 1004;
                     else if(this.quantity >= 1000) itemIconId = 1003;
                     else if(this.quantity >= 250) itemIconId = 1002;
@@ -2371,21 +2372,22 @@ export class InterfaceItemSlot extends HudObject
                     
                     //Group iron platebody, idk if this is needed
                 case 26158: // default is 2
-                    console.log("WTF IS GOING ON"); // test, this will spam it alot
                     console.log(this.quantity); // test, this will spam it alot
-                    if(this.quantity >= 5) itemIconId = 26165;
-                    else if(this.quantity >= 4) itemIconId = 26163;
-                    else if(this.quantity >= 3) itemIconId = 26161;
-                    else if(this.quantity >= 2) itemIconId = 26159;
+                    itemIconId = 26165;
+                 //   if(this.quantity >= 5) itemIconId = 26165;
+                //    else if(this.quantity >= 4) itemIconId = 26163;
+               //     else if(this.quantity >= 3) itemIconId = 26161;
+               //     else if(this.quantity >= 2) itemIconId = 26159;
                     break; 
                     
                     //Group hardcore iron platebody, idk if this is needed
                 case 26172: // default is 2
                     console.log(this.quantity); // test, this will spam it alot
-                    if(this.quantity >= 5) itemIconId = 26178;
-                    else if(this.quantity >= 4) itemIconId = 26176;
-                    else if(this.quantity >= 3) itemIconId = 26174;
-                    else if(this.quantity >= 2) itemIconId = 26172;
+                    itemIconId = 26179;
+              //      if(this.quantity >= 5) itemIconId = 26179;
+               //     else if(this.quantity >= 4) itemIconId = 26177;
+                //    else if(this.quantity >= 3) itemIconId = 26176;
+               //     else if(this.quantity >= 2) itemIconId = 26174;
                     break; 
                     
             }
