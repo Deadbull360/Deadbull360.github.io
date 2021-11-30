@@ -2357,6 +2357,23 @@ export class InterfaceItemSlot extends HudObject
                     else if(this.quantity >= 3) itemIconId = 24714;
                     else if(this.quantity >= 2) itemIconId = 24713;
                     break; 
+                    
+                    //Group iron platebody, idk if this is needed
+                case 26158:
+                    if(this.quantity >= 5) itemIconId = 26164;
+                    else if(this.quantity >= 4) itemIconId = 26162;
+                    else if(this.quantity >= 3) itemIconId = 26160;
+                    else if(this.quantity >= 2) itemIconId = 26158;
+                    break; 
+                    
+                    //Group hardcore iron platebody, idk if this is needed
+                case 26172:
+                    if(this.quantity >= 5) itemIconId = 26178;
+                    else if(this.quantity >= 4) itemIconId = 26176;
+                    else if(this.quantity >= 3) itemIconId = 26174;
+                    else if(this.quantity >= 2) itemIconId = 26172;
+                    break; 
+                    
             }
 
             this.icon.graphic.texture = PIXI.Texture.from(`img/items/${itemIconId}.png`);
