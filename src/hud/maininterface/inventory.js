@@ -106,8 +106,13 @@ export class InterfaceItemSlot extends HudObject
         else
         {
             var comp = GetItemComposition(this.itemId);
-
-            this.name = comp.name;
+            
+            if (comp.name != null){
+                this.name = comp.name;
+            }
+            else {
+                this.name = "Invalid name";
+            }
             
             var itemIconId = this.itemId;
 
