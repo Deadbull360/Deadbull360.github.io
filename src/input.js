@@ -346,8 +346,9 @@ export class Input
         }
         else if(e.button == 1)
         {
-            DEVELOPER_MODE = !DEVELOPER_MODE;
-            SetDeveloperMode(DEVELOPER_MODE);
+       // N OMEGALUL
+       //     DEVELOPER_MODE = !DEVELOPER_MODE;
+       //     SetDeveloperMode(DEVELOPER_MODE);
         }
         this.onMouseMove()
     }
